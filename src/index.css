@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dacece1f;
+}
+::-webkit-scrollbar-thumb {
+  background: #f7e708;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2ac231;
+}
+
+.glass {
+    backdrop-filter: blur(6px) saturate(143%);
+    -webkit-backdrop-filter: blur(6px) saturate(143%);
+    background-color: rgba(225, 230, 242, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgb(255, 255, 255);
+}
+body {
+    background-color: #50E3C2;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(198.00, 100%, 50%) 0, transparent 55%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
